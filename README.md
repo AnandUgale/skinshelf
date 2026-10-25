@@ -2,7 +2,7 @@
 
 A before-you-buy receipt for a cosmetic skin scan. Read YouCam raw and adjusted scores, distinguish what the image does and does not establish, compare fictional cosmetics against your preferences, and save the reasoning with a visible INR 0 no-purchase option.
 
-**Current state: one real end-to-end adapter sample verified; not registered or submitted.** On October 25, the provider-supplied 1200×1600 PNG ran through metadata registration, upload, one four-concern SD task and two polls to live UI. Free bonus units fell 40 → 31; no card, subscription or auto-refill. The test key was revoked afterward. No photo or credential is bundled. Fixture responses and products remain explicitly fictional. See [verification and limits](VERIFICATION.md).
+**One real end-to-end adapter sample verified.** On October 25, the provider-supplied 1200×1600 PNG ran through metadata registration, upload, one four-concern SD task and two polls to live UI. Free bonus units fell 40 → 31; no card, subscription or auto-refill. The test key was revoked afterward. No photo or credential is bundled. Fixture responses and products remain explicitly fictional. See [verification and limits](VERIFICATION.md).
 
 ## Run
 
@@ -76,6 +76,6 @@ Scores are normalized from the documented `data.results.output` array. One real 
 - [India free-account pricing](https://yce.makeupar.com/ai-api/api-pricing)
 - [Competition rules](https://youcam-api-skin-ai-ecommerce.devpost.com/rules)
 
-Original code created locally on October 25, 2026, after the dedicated Pro research and ordinary Pro scope critique. Development was delegated by the human; the human did not author or personally test this code. Later receipt/demo preparation used the authorized agent-led fallback after the Pro session failed; it was not Pro-reviewed. No other competition's project code was reused. Product illustrations are original CSS shapes; fixtures are invented test values, not copied analyses. Original source is published under MIT; provider services remain subject to their own terms.
+Original code created locally on October 25, 2026, after the dedicated Pro research and ordinary Pro scope critique. Development was delegated by the human; the human did not author or personally test this code. Receipt/demo implementation initially used the authorized agent-led fallback while Pro failed. After the session recovered, Pro reviewed the reported final evidence and official rules, but could not retrieve the source or video for independent inspection. No other competition's project code was reused. Product illustrations are original CSS shapes; fixtures are invented test values, not copied analyses. Original source is published under MIT; provider services remain subject to their own terms.
 
-Published source: [AnandUgale/skinshelf](https://github.com/AnandUgale/skinshelf). Public demo: [YouTube](https://www.youtube.com/watch?v=ZaAmN24-icE). No competition submission or award is claimed by publishing these artifacts.
+Published source: [AnandUgale/skinshelf](https://github.com/AnandUgale/skinshelf). Public demo: [YouTube](https://www.youtube.com/watch?v=ZaAmN24-icE). Project story: [SkinShelf on Devpost](https://devpost.com/software/skinshelf-7c6rnu). Publishing these artifacts does not itself establish an accepted competition entry or award.
