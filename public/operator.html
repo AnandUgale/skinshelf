@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SkinShelf · Local operator setup</title><link rel="stylesheet" href="/style.css"><script type="module" src="/operator.mjs"></script></head>
+<body><main><section class="panel"><h1>Prepare one free sample</h1>
+<p>Local operator setup for SkinShelf. One attempt reserves at most 9 verified free units. No purchase, card, subscription or retry is available here.</p>
+<form id="setup" autocomplete="off">
+<p><label for="key">Replacement YouCam API key</label><input id="key" type="password" autocomplete="off" spellcheck="false" required minlength="16" maxlength="512"></p>
+<p><label for="sample">Authorized provider sample PNG</label><input id="sample" type="file" accept="image/png" required></p>
+<p><label><input id="authorized" type="checkbox" required> This is the provider-supplied sample authorized for this one test.</label></p>
+<p><label><input id="free" type="checkbox" required> At least 9 free units are verified; no card, paid plan or auto-refill.</label></p>
+<button id="prepare" type="submit">Prepare one-use sample in memory</button></form>
+<p id="status" role="status">The key and image are sent only to this local server. They are not saved to files, browser storage, logs or responses. They are cleared from the form on submission and from server memory after the attempt.</p>
+<p><a href="/">Open SkinShelf</a></p><p><a href="/api/verification">View sanitized run status</a></p></section></main></body></html>
