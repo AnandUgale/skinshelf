@@ -6,7 +6,9 @@ A before-you-buy receipt for a cosmetic skin scan. Read YouCam raw and adjusted 
 
 ## Run
 
-Node 20+; no dependencies, package installation or external network required for fixture mode.
+Use Node 24 LTS (tested with 24.18.0); no dependencies, package installation or external network required for recorded/fixture mode.
+
+Download this repository using **Code → Download ZIP**, extract it, and open a terminal in the extracted `skinshelf-main` directory. Or clone the repository. Then:
 
 ```powershell
 node server.mjs
@@ -15,7 +17,9 @@ node --test
 node evaluation.mjs
 ```
 
-The app binds to 127.0.0.1 only. It is not publicly hosted. For a judge test build, source/instructions alone are not proof of successful judge access; a clean-machine run and usable authorized API access remain to verify.
+The app binds to 127.0.0.1 only. This is a desktop-browser test build, not a hosted live-analysis service. The published ZIP was downloaded through the browser, compared against all 24 reviewed source files, freshly extracted and passed all 40 tests. A separate extracted copy was checked in the browser. These checks used the development computer, not an independent judge's machine.
+
+Watch the public [2:20 demonstration](https://www.youtube.com/watch?v=ZaAmN24-icE). It shows actual browser captures at approximately 1 fps, with pauses edited, English captions and no audio. It reviews a completed API sample; it does not perform another inference.
 
 ## Review the completed sample without a key
 
@@ -38,7 +42,7 @@ Changing source, concern or preferences invalidates the old receipt/export. Miss
 - Exact raw/adjusted values; raw scores are higher-is-better model outputs, not severity or percentages of disease. Adjusted scores are presentation values, not confidence.
 - The user chooses which concern to explore. Different concerns are never ranked against one another; no clinical threshold or product-effectiveness mapping is invented. Missing raw values disable that context and are never inferred from adjusted scores.
 - Deterministic hard filtering by budget, fragrance-free and lightweight preferences, with reasons for each exclusion and a price-only baseline.
-- The shelf is intentionally independent of skin score: current evidence cannot justify a cosmetic efficacy ranking. This limits the strength of the mandatory API integration and must be addressed before competition submission.
+- The shelf is intentionally independent of skin score: current evidence cannot justify a cosmetic efficacy ranking. The API supplies the concern-specific score context and provenance saved in the decision receipt, while user preferences determine product eligibility.
 - Missing data stays missing; no hidden fixture fallback after live errors.
 - Recorded sample review, exact observed values and honest receipt, without consuming units. Recorded data is never labelled a new live request.
 - Exportable before-you-buy receipt with server-canonical provenance, score context, preferences, exclusion reasons and ₹0 option; stale exports are cleared when inputs change.
@@ -72,4 +76,6 @@ Scores are normalized from the documented `data.results.output` array. One real 
 - [India free-account pricing](https://yce.makeupar.com/ai-api/api-pricing)
 - [Competition rules](https://youcam-api-skin-ai-ecommerce.devpost.com/rules)
 
-Original code created locally on October 25, 2026, after the dedicated Pro research and ordinary Pro scope critique. Development was delegated by the human; the human did not author or personally test this code. No other competition's project code was reused. Product illustrations are original CSS shapes; fixtures are invented test values, not copied analyses. Original source includes an MIT license; provider services remain subject to their own terms. No repository or demo has been published.
+Original code created locally on October 25, 2026, after the dedicated Pro research and ordinary Pro scope critique. Development was delegated by the human; the human did not author or personally test this code. Later receipt/demo preparation used the authorized agent-led fallback after the Pro session failed; it was not Pro-reviewed. No other competition's project code was reused. Product illustrations are original CSS shapes; fixtures are invented test values, not copied analyses. Original source is published under MIT; provider services remain subject to their own terms.
+
+Published source: [AnandUgale/skinshelf](https://github.com/AnandUgale/skinshelf). Public demo: [YouTube](https://www.youtube.com/watch?v=ZaAmN24-icE). No competition submission or award is claimed by publishing these artifacts.
