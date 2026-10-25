@@ -1,0 +1,8 @@
+{
+  "name": "skinshelf",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node server.mjs", "test": "node --test", "evaluate": "node evaluation.mjs" },
+  "engines": { "node": ">=20" }
+}
